@@ -1,0 +1,190 @@
+.body {
+    background-color: #669900;
+    font-family: arial;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-stroke: .25px;
+}
+.pos-header {
+    background-color: #eff8db;
+    text-align: center;
+    padding: 10px 0px 10px 0px;
+    margin: -1px 0 10px 0;
+}
+.pos-bar {
+    background-color: #eff8db;
+    margin-bottom: 10px;
+    height: 30px;
+    padding-top: 3px;
+}
+.curTran {
+    float: left;
+}
+.insertSku {
+    float: right;
+    font-size: 16px;
+    padding-top: 1px;
+    margin-right: -10px;
+    ::-webkit-input-placeholder {
+        text-align: right;
+    }
+    input:-moz-placeholder {
+        text-align: right;
+    }
+}
+.pos-main {
+    background-color: #eff8db;
+    min-height: 300px;
+    /* This shit in the next line just works do not question it. */
+    overflow: hidden;
+}
+.overlayArea {
+    overflow: hidden;
+}
+.overlay {
+    background-color: #eff8db;
+    z-index: 10;
+    padding: 10px;
+    overflow: hidden;
+    min-height: 300px;
+}
+
+
+.pos-sidebar {
+    padding-top: 10px;
+}
+.pos-product-list {
+    text-align: right;
+}
+.pos-buttons {
+    margin-top: 5px;
+}
+.pos-button {
+    background-clip: padding-box;
+    background-color: #eff8db;
+    height: 55px;
+    text-align: center;
+    font-weight: bold;
+    line-height: 47px;
+    cursor: pointer;
+    border: 5px solid rgba(0, 0, 0, 0.0);
+}
+.pos-button:hover {
+    border-color: rgba(239, 248, 219, 0.5);
+}
+.pos-button:active {
+    border-color: rgba(239, 248, 219, 0.25);
+}
+.pos-footer {
+    margin-top: 5px;
+    height: 30px;
+    font-size: 10px;
+    text-align: center;
+    line-height: 30px;
+    background-color: #eff8db;
+}
+.addsku-label {
+    display: inline-block;
+    float: left;
+    clear: left;
+    width: 100px;
+    text-align: right;
+    margin-right: 10px;
+    line-height: 25px;
+}
+.addsku-input {
+    display: inline-block;
+    float: left;
+}
+.addsku-button {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+}
+.item-even {
+    background-color: #eff8db;
+    padding: 5px;
+    font-weight: bold;
+    overflow: hidden;
+}
+.item-odd {
+    background-color: #e2f0b5;
+    padding: 5px;
+    overflow: hidden;
+}
+.item-text-align-left {
+    text-align: left;
+    float: left;
+    width: 20%;
+}
+.item-text-align-right {
+    text-align: right;
+    float: left;
+    width: 80%;
+}
+.hiddenLink {
+    text-decoration: none;
+    color: black;
+}
+.clear {
+    clear: both;
+}
+/* Extra Small - Equal to or less than 767px wide */
+ @media (max-width: 767px) {
+    .pos-sidebar {
+        display: none;
+        !important;
+    }
+    .pos-product-list {
+        margin-left: -15px;
+    }
+    .pos-main {
+        background-color: #eff8db;
+        min-height: 30px;
+    }
+    .pos-bar {
+        font-size: 16px;
+    }
+    .curTran {
+        padding-top: 1px;
+        margin-left: -10px;
+    }
+    .insertSku {
+        font-size: 12px;
+    }
+    .pos-button {
+        margin: 0 auto;
+        max-width: 90%
+    }
+}
+/* Small - Between 768px and 991px wide */
+ @media (min-width: 768px) {
+    .pos-header {
+        font-size: 18px;
+    }
+    .curTran {
+        font-size: 16px;
+        padding-top: 1px;
+        margin-left: -10px;
+    }
+    .insertSku {
+        font-size: 12px;
+    }
+}
+/* Medium - Between 992px and 1199px wide */
+ @media (min-width: 992px) {
+    .pos-header {
+        font-size: 24px;
+        margin-top: 10px;
+    }
+    .pos-bar {
+        font-size: 20px;
+    }
+}
+/* Large - Equal to or greater than 1200px wide */
+ @media (min-width: 1200px) {
+    .pos-header {
+        font-size: 24px;
+        margin-top: 10px;
+    }
+}
