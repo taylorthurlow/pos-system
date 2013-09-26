@@ -42,7 +42,6 @@
 }
 .pos-overlay {
     display: none;
-    padding: 10px;
 }
 .pos-sidebar {
     padding-top: 10px;
@@ -77,18 +76,23 @@
     line-height: 30px;
     background-color: #eff8db;
 }
+.addCustomer-label,
 .addsku-label {
     display: inline-block;
     float: left;
     clear: left;
-    width: 100px;
+    width: 25%;
     text-align: right;
     margin-right: 10px;
     line-height: 25px;
 }
+.addCustomer-input,
 .addsku-input {
     display: inline-block;
     float: left;
+}
+.addCustomer-input {
+    width: 60%;
 }
 .addsku-button {
     display: inline-block;
@@ -123,6 +127,9 @@
 }
 .clear {
     clear: both;
+}
+.center {
+    text-align: center;
 }
 /* Extra Small - Equal to or less than 767px wide */
  @media (max-width: 767px) {

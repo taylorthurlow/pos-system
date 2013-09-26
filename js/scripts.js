@@ -29,12 +29,20 @@ $("#inSku").keyup(function (event) {
 
 function popup() {
 
-    if($('.pos-main').css('display') == 'block') {
-        $('.pos-main').css({ 'display': 'none' });
-        $('.pos-overlay').css({ 'display': 'block' });
+    if ($('.pos-main').css('display') == 'block') {
+        $('.pos-main').css({
+            'display': 'none'
+        });
+        $('.pos-overlay').css({
+            'display': 'block'
+        });
     } else {
-        $('.pos-main').css({ 'display': 'block' });
-        $('.pos-overlay').css({ 'display': 'none' });
+        $('.pos-main').css({
+            'display': 'block'
+        });
+        $('.pos-overlay').css({
+            'display': 'none'
+        });
     }
 
 }
@@ -45,53 +53,53 @@ function popup() {
  * sku input box when the user types in numbers.
  **/
 
-$(document).bind('keydown', function(e) {
-    if(String.fromCharCode(e.keyCode) == "1") {
+$(document).bind('keydown', function (e) {
+    if (String.fromCharCode(e.keyCode) == "1" && !($(':input').is(':focus'))) {
         $('#inSku').focus();
     }
 });
-$(document).bind('keydown', function(e) {
-    if(String.fromCharCode(e.keyCode) == "2") {
+$(document).bind('keydown', function (e) {
+    if (String.fromCharCode(e.keyCode) == "2" && !($(':input').is(':focus'))) {
         $('#inSku').focus();
     }
 });
-$(document).bind('keydown', function(e) {
-    if(String.fromCharCode(e.keyCode) == "3") {
+$(document).bind('keydown', function (e) {
+    if (String.fromCharCode(e.keyCode) == "3" && !($(':input').is(':focus'))) {
         $('#inSku').focus();
     }
 });
-$(document).bind('keydown', function(e) {
-    if(String.fromCharCode(e.keyCode) == "4") {
+$(document).bind('keydown', function (e) {
+    if (String.fromCharCode(e.keyCode) == "4" && !($(':input').is(':focus'))) {
         $('#inSku').focus();
     }
 });
-$(document).bind('keydown', function(e) {
-    if(String.fromCharCode(e.keyCode) == "5") {
+$(document).bind('keydown', function (e) {
+    if (String.fromCharCode(e.keyCode) == "5" && !($(':input').is(':focus'))) {
         $('#inSku').focus();
     }
 });
-$(document).bind('keydown', function(e) {
-    if(String.fromCharCode(e.keyCode) == "6") {
+$(document).bind('keydown', function (e) {
+    if (String.fromCharCode(e.keyCode) == "6" && !($(':input').is(':focus'))) {
         $('#inSku').focus();
     }
 });
-$(document).bind('keydown', function(e) {
-    if(String.fromCharCode(e.keyCode) == "7") {
+$(document).bind('keydown', function (e) {
+    if (String.fromCharCode(e.keyCode) == "7" && !($(':input').is(':focus'))) {
         $('#inSku').focus();
     }
 });
-$(document).bind('keydown', function(e) {
-    if(String.fromCharCode(e.keyCode) == "8") {
+$(document).bind('keydown', function (e) {
+    if (String.fromCharCode(e.keyCode) == "8" && !($(':input').is(':focus'))) {
         $('#inSku').focus();
     }
 });
-$(document).bind('keydown', function(e) {
-    if(String.fromCharCode(e.keyCode) == "9") {
+$(document).bind('keydown', function (e) {
+    if (String.fromCharCode(e.keyCode) == "9" && !($(':input').is(':focus'))) {
         $('#inSku').focus();
     }
 });
-$(document).bind('keydown', function(e) {
-    if(String.fromCharCode(e.keyCode) == "0") {
+$(document).bind('keydown', function (e) {
+    if (String.fromCharCode(e.keyCode) == "0" && !($(':input').is(':focus'))) {
         $('#inSku').focus();
     }
 });
@@ -199,9 +207,6 @@ function refreshList() {
             });
         }
     });
-
-
-
 }
 
 
@@ -229,6 +234,40 @@ function addSku() {
             document.getElementById('sub-pricefull').value = '';
             document.getElementById('sub-pricesale').value = '';
             document.getElementById('sub-tax').value = '';
+        }
+    });
+}
+
+
+/**
+ * This function takes input from the addCustomer form and adds it to the customer database.
+ **/
+
+function addCustomer() {
+    alert('started');
+    $.ajax({
+        url: 'addCustomer.php',
+        type: 'POST',
+        data: {
+            firstName: $('input#addCustomer-firstName').val(),
+            lastName: $('input#addCustomer-lastName').val(),
+            address: $('input#addCustomer-address').val(),
+            city: $('input#addCustomer-city').val(),
+            state: $('input#addCustomer-state').val(),
+            zip: $('input#addCustomer-zip').val(),
+            phone1: $('input#addCustomer-phone1').val(),
+            phone2: $('input#addCustomer-phone2').val()
+        },
+        success: function () {
+            alert('submitted');
+            document.getElementById('addCustomer-firstName').value = '';
+            document.getElementById('addCustomer-lastName').value = '';
+            document.getElementById('addCustomer-address').value = '';
+            document.getElementById('addCustomer-city').value = '';
+            document.getElementById('addCustomer-state').value = '';
+            document.getElementById('addCustomer-zip').value = '';
+            document.getElementById('addCustomer-phone1').value = '';
+            document.getElementById('addCustomer-phone2').value = '';
         }
     });
 }
