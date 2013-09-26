@@ -11,20 +11,6 @@ var display = document.getElementById('pos-product-list');
 
 
 
-$(window).resize(function() {
-    $('.overlay').css({
-        'height': ($('.pos-main').height() + 'px'),
-        'width': ($('.pos-main').width() + 'px'),
-        'position': 'absolute',
-        'left': ($('.pos-main').offset().left + 'px'),
-        'top': ($('.pos-main').offset().top + 'px')
-    });
-});
-
-
-
-
-
 /**
  * This function here executes on page load to handle the enter button when entering skus for the
  * transaction. This is why there is no "add" button next to the text box.
@@ -36,7 +22,22 @@ $("#inSku").keyup(function (event) {
     if (event.keyCode == 13) {
         ringItem();
     }
+    if (event.keyCode == 81) {
+        popup();
+    }
 });
+
+function popup() {
+
+    if($('.pos-main').css('display') == 'block') {
+        $('.pos-main').css({ 'display': 'none' });
+        $('.pos-overlay').css({ 'display': 'block' });
+    } else {
+        $('.pos-main').css({ 'display': 'block' });
+        $('.pos-overlay').css({ 'display': 'none' });
+    }
+
+}
 
 
 /**
@@ -190,10 +191,17 @@ function refreshList() {
                 success: function (data) {
                     display.innerHTML = data;
                     skuInBox.value = '';
+
+                    $('.overlay').css({
+                        'height': ($('.pos-main').height() + 'px')
+                    });
                 }
             });
         }
     });
+
+
+
 }
 
 

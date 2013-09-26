@@ -27,45 +27,13 @@
                     </div>
                 </div>
             </div>
-            <div class="row pos-main overlayArea">
-                <div class="overlay">
-                    Lorem laborum mentitum, vidisse tamen arbitror. Excepteur ubi multos, quamquam
-                    in deserunt. De noster efflorescere ea ullamco instituendarum id admodum. Do
-                    laborum coniunctione. Hic aut elit duis amet. Litteris anim quid consequat dolor
-                    id nostrud aliqua litteris mandaremus, voluptate aute officia fabulas de nisi
-                    ullamco ea litteris. Quorum ex ullamco ea ipsum, multos senserit ad excepteur
-                    hic aliquip minim ab quamquam voluptatibus ut quo nescius despicationes. Eu quis
-                    a fore si quamquam anim iudicem.
-                    <br>
-                    Ipsum senserit firmissimum in veniam ad senserit ad fugiat e magna te pariatur,
-                    irure aut expetendis de nisi, sint laboris et transferrem e aut eram ne lorem,
-                    si eiusmod et commodo e ex expetendis imitarentur. Ad quem quibusdam
-                    despicationes. Sed doctrina arbitrantur, laborum dolore commodo commodo. Labore
-                    voluptate hic amet legam. Quae incididunt comprehenderit. Cillum quamquam ex
-                    voluptatibus de te lorem voluptatibus, quis illustriora commodo fore admodum si
-                    aut eram sempiternum. Culpa hic deserunt et aute hic si et amet dolor duis.
-                    Laboris eruditionem ut consequat, offendit duis quem nam summis.
-                    <br>
-                    An ab dolore sint elit, iis quae praesentibus id est est voluptatibus id
-                    possumus dolore nam commodo efflorescere nam a non despicationes non ab eram
-                    graviterque, quamquam sed cupidatat, ea culpa concursionibus. Tamen do tempor.
-                    Se multos coniunctione, mentitum tamen ingeniis mentitum sed nisi probant
-                    coniunctione qui eu iudicem e senserit ad quorum quamquam mandaremus, minim eu
-                    quo culpa mandaremus qui nam sint summis tamen offendit ex duis incurreret nam
-                    illustriora. Aliquip quorum elit iudicem aliqua, laborum veniam excepteur
-                    laboris nam occaecat ab excepteur ita si iis praesentibus nam fore occaecat iis
-                    mentitum qui ad vidisse o proident ad officia quis magna ex culpa a ne
-                    expetendis eu occaecat. Cernantur eu minim aliquip. Ne ea cohaerescant hic nam
-                    nulla arbitrantur, ut irure pariatur sempiternum, minim consequat iis
-                    exquisitaque, amet praesentibus commodo varias offendit aut ingeniis multos
-                    laborum ea laboris o voluptate ne appellat relinqueret se ullamco. Sed noster
-                    cupidatat incididunt, possumus ita offendit eu doctrina ab lorem iudicem ne
-                    aliquip elit quid et quorum, doctrina sempiternum est occaecat, ipsum nescius
-                    tractavissent ne singulis quae iudicem, e labore o varias. Do malis iis quem a
-                    ita elit hic velit, illum quo mandaremus de irure, do enim reprehenderit, do si
-                    philosophari in doctrina quae nescius laboris se aliquip aute arbitror
-                    cernantur, veniam iis doctrina.
+            <div class="row pos-secondary">
+                <div class="col-md-12 pos-overlay">
+                    <h4>Customer Information</h4>
+                    <p>Prompt for customer information here. Also able to pull info from a database.</p>
                 </div>
+            </div>
+            <div class="row pos-main">
                 <div class="col-md-4 pos-sidebar">
                     <div id="pos-add-sku" class="row">
                         <div class="col-md-12">
@@ -97,7 +65,7 @@
             </div>
             <div class="row pos-buttons">
                 <div class="col-sm-4 col-md-2 pos-button" onclick="window.location.reload()">New Transaction</div>
-                <div class="col-sm-4 col-md-2 pos-button" onclick="window.location.reload()">Customer Info</div>
+                <div class="col-sm-4 col-md-2 pos-button" onclick="popup()">Customer Info</div>
                 <div class="col-sm-4 col-md-2 pos-button" onclick="">Something</div>
                 <div class="col-sm-4 col-md-2 pos-button" onclick="">Something</div>
                 <div class="col-sm-4 col-md-2 pos-button" onclick="">Something</div>

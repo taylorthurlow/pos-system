@@ -31,24 +31,19 @@
         text-align: right;
     }
 }
+.pos-overlay,
 .pos-main {
     background-color: #eff8db;
     min-height: 300px;
-    /* This shit in the next line just works do not question it. */
-    overflow: hidden;
+    overflow: auto;
 }
-.overlayArea {
-    overflow: hidden;
+.pos-main {
+    display: block;
 }
-.overlay {
-    background-color: #eff8db;
-    z-index: 10;
+.pos-overlay {
+    display: none;
     padding: 10px;
-    overflow: hidden;
-    min-height: 300px;
 }
-
-
 .pos-sidebar {
     padding-top: 10px;
 }
