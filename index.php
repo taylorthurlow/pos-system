@@ -29,7 +29,7 @@
             <div class="row pos-secondary">
                 <div class="col-md-12 pos-overlay">
                     <div class="row">
-                        <div class="col-md-6">
+                        <div class="col-md-4">
                             <h4 class="center" style="padding-bottom: 10px;">Add New Customer</h4>
                             <form id="addCustomer" name="addCustomer">
                                 <label class="addCustomer-label">First Name:</label>
@@ -48,10 +48,13 @@
                                 <input class="addCustomer-input" type="text" id="addCustomer-phone1">
                                 <label class="addCustomer-label">Phone 2:</label>
                                 <input class="addCustomer-input" type="text" id="addCustomer-phone2">
-                                <input id="submitNewCustomer" class="center clear" style="padding: 10px 0 10px 0;" type="button" onclick="addCustomer()" value="Add Customer">
+                                <br /> <br />
+                                <div class="newCustomer-button" style="float: left;">
+                                    <input id="submitNewCustomer" type="button" onclick="addCustomer()" value="Add">
+                                </div>
                             </form>
                         </div>
-                        <div class="col-md-6">
+                        <div class="col-md-8">
                             <p>right side</p>
                         </div>
                     </div>
