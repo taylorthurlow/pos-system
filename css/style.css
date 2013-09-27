@@ -31,8 +31,7 @@
         text-align: right;
     }
 }
-.pos-overlay,
-.pos-main {
+.pos-overlay, .pos-main {
     background-color: #eff8db;
     min-height: 300px;
     overflow: auto;
@@ -76,23 +75,30 @@
     line-height: 30px;
     background-color: #eff8db;
 }
-.addCustomer-label,
-.addsku-label {
+.addCustomer-label, .addsku-label {
     display: inline-block;
     float: left;
     clear: left;
-    width: 25%;
+    width: 40%;
     text-align: right;
     margin-right: 10px;
     line-height: 25px;
 }
-.addCustomer-input,
+.addCustomer-label {
+    width: 40%;
+}
 .addsku-input {
+    width: 55%;
+}
+.newCustomer-button {
+    padding: 10px 0 10px 0;
+}
+.addCustomer-input, .addsku-input {
     display: inline-block;
     float: left;
 }
 .addCustomer-input {
-    width: 60%;
+    width: 55%;
 }
 .addsku-button {
     display: inline-block;
@@ -104,7 +110,7 @@
     background-color: #eff8db;
     padding: 5px;
     font-weight: bold;
-    overflow: hidden;
+    overflow: hidden
 }
 .item-odd {
     background-color: #e2f0b5;
@@ -137,9 +143,6 @@
         display: none;
         !important;
     }
-    .pos-product-list {
-        margin-left: -15px;
-    }
     .pos-main {
         background-color: #eff8db;
         min-height: 30px;
@@ -159,8 +162,15 @@
         max-width: 90%
     }
 }
+/* Extra Small - Equal to or less than 767px wide */
+@media (max-width: 767px) {
+    .pos-main {
+
+    }
+
+}
 /* Small - Between 768px and 991px wide */
- @media (min-width: 768px) {
+ @media (min-width: 768px) and (max-width: 991px) {
     .pos-header {
         font-size: 18px;
     }
@@ -174,7 +184,7 @@
     }
 }
 /* Medium - Between 992px and 1199px wide */
- @media (min-width: 992px) {
+ @media (min-width: 992px) and (max-width: 1199px) {
     .pos-header {
         font-size: 24px;
         margin-top: 10px;

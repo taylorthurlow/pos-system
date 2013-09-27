@@ -48,14 +48,32 @@
                                 <input class="addCustomer-input" type="text" id="addCustomer-phone1">
                                 <label class="addCustomer-label">Phone 2:</label>
                                 <input class="addCustomer-input" type="text" id="addCustomer-phone2">
-                                <br /> <br />
-                                <div class="newCustomer-button" style="float: left;">
-                                    <input id="submitNewCustomer" type="button" onclick="addCustomer()" value="Add">
+                                <div class="row">
+                                    <div class="newCustomer-button center span12">
+                                        <input id="submitNewCustomer" type="button" onclick="addCustomer()" value="Add">
+                                    </div>
                                 </div>
+
                             </form>
                         </div>
                         <div class="col-md-8">
-                            <p>right side</p>
+                            <div class="" style="padding: 10px;">
+                                Ea ita amet laborum hic offendit quid nescius commodo ea fugiat cupidatat
+                                possumus, nisi aliquip o culpa illum aut quid est litteris ita quorum non ex
+                                illum mandaremus reprehenderit de aute ea ullamco quo eram a aute ut vidisse.
+                                Admodum an arbitror, mandaremus tamen labore mentitum enim. Fugiat et cernantur,
+                                iis sint ullamco arbitror. Quorum o in sunt cernantur e tamen qui deserunt eu
+                                sed noster summis sunt proident, iis nam voluptatibus iis o irure quo elit aut
+                                eu culpa cernantur, nostrud graviterque si proident ubi arbitror ne sint
+                                voluptate. Sed tempor de aliquip o hic cillum occaecat eruditionem ea ea quorum
+                                quorum si probant et incididunt in enim. Ullamco multos minim hic noster, quorum
+                                praetermissum quibusdam fore arbitror ita offendit eram ne senserit
+                                philosophari, pariatur do quis. Si duis se quorum quo labore excepteur est
+                                senserit, ita aliqua instituendarum et ea o coniunctione ad nulla incididunt do
+                                aute nisi, cupidatat sunt summis appellat enim se magna senserit ullamco, lorem
+                                expetendis exquisitaque. Ut quae dolore de iudicem.
+                            </div>
+
                         </div>
                     </div>
                 </div>
@@ -77,12 +95,14 @@
                                 <input class="addsku-input" type="text" id="sub-pricesale">
                                 <label class="addsku-label">Tax (1 or 0):</label>
                                 <input class="addsku-input" type="text" id="sub-tax">
+                                <!---
                                 <br />
                                 <br />
                                 <div class="addsku-button">
                                     <input id="submit-sku" type="button" onclick="addSku()" value="Add SKU">
                                     <br>
                                 </div>
+                                --->
                             </form>
                         </div>
                     </div>
@@ -101,13 +121,13 @@
             <div class="row pos-footer">
                 <div class="visible-xs">
                     <a href="" class="hiddenLink">&copy;</a>
-                    <?php echo date( "Y"); ?>Taylor Thurlow.</div>
+                    <?php echo date( "Y"); ?> - Taylor Thurlow</div>
                 <div class="visible-sm">
                     <a href="" class="hiddenLink">&copy;</a>
-                    <?php echo date( "Y"); ?>Taylor Thurlow. Chrome and Firefox only.</div>
+                    <?php echo date( "Y"); ?> - Taylor Thurlow. Chrome and Firefox only.</div>
                 <div class="visible-md visible-lg">
                     <a href="" class="hiddenLink">&copy;</a>
-                    <?php echo date( "Y"); ?>Taylor Thurlow. Supported on Chrome and Firefox only.</div>
+                    <?php echo date( "Y"); ?> - Taylor Thurlow. Supported on Chrome and Firefox only.</div>
                 <span class="visible-xs">xsmall</span>
                 <span class="visible-sm">small</span>
                 <span class="visible-md">med</span>
@@ -122,7 +142,6 @@
         $(function() {
             startNewTrans();
         });
-        popup();
     </script>
 
 </html>
