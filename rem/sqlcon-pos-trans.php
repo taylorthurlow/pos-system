@@ -1,7 +1,7 @@
 <?php
 
 // Create connection
-$con = mysqli_connect("pos.db", "frizkie", "poolsharks", "pos-trans");
+$con = mysqli_connect("pos.db", "frizkie", "INSERTPOS", "pos-trans");
 
 // Check connection
 if(mysqli_connect_errno($con)) {
